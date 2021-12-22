@@ -21,7 +21,7 @@ private:
 
 public:
     RTDmodule(int i2c_addressRTD);
-    void config(byte sensorPosition, int Rref, int mode, int wiring = 1, int FaultDetection = 0, int filter = 1);
+    void config(byte sensorPosition, int mode, int Rref = RREF, int wiring = 1, int FaultDetection = 0, int filter = 1);
     void startMeasurementSingle(int sensorNum);
     void startMesasurementAll();
     float readTemperatureSingle(int sensorNum);
