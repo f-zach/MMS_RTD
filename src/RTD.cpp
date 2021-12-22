@@ -46,10 +46,6 @@ void RTDmodule::config(byte sensorPositions, int mode, int Rref, int wiring = 1,
             // Make a slot number array 
             _sensorNumAtPos[_sensorCount] = _i+1;
         }
-        else if(!bitRead(_sensorPositions, _i))
-        {
-            _sensorNumAtPos[_sensorCount] = -1;
-        }
     }
     sensorCount = _sensorCount;
     
